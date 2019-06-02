@@ -7,7 +7,8 @@ from requests_html import HTMLSession
 def OtwierajStrone(link):
 	webbrowser.get('windows-default').open('https://' + link)
 
-#Skrypt, który otwiera wszystkie podstrony na podanej przez użytkownika stronie.
+#Skrypt, który otwiera wszystkie podstrony 
+#na podanej przez użytkownika stronie.
 def OtwLink(strona):
 	session = HTMLSession()
 	r = session.get('https://' + strona)
@@ -24,10 +25,8 @@ def OtwLink(strona):
 		print('Ok')
 	else:
 		print('Błąd, włącz program jeszcze raz i podaj poprawną wartość.')
-
 	print('Czy otworzyć podstrony? UWAGA! MOŻE ZAWIESIĆ KOMPUTER!')
 	odp2 = input().lower()
-
 	if odp2 == 't':
 		for i in range (ls3):
 			webbrowser.open(ls2[i])
@@ -41,12 +40,7 @@ s = input()
 #pobiera stronę z wartości 's' i uruchamia skrypt
 if s:
 	OtwLink(s)
-
 #Jeżeli użytkownik nie poda żadnej wartości, zostanie poproszony
 #o podanie poprawnej nazwy strony
 else:
 	print('podaj poprawną nazwe strony')
-
-
-#Prosi o podanie adresu przez użytownika
-
