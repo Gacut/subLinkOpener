@@ -1,5 +1,24 @@
 #! python3
 
+
+print('''
+
+                                 
+		 _____     _   __    _     _     
+		|   __|_ _| |_|  |  |_|___| |_   
+		|__   | | | . |  |__| |   | '_|  
+		|_____|___|___|_____|_|_|_|_,_|  
+		                                 
+		                                 
+		   _____                         
+		  |     |___ ___ ___ ___ ___     
+		  |  |  | . | -_|   | -_|  _|    
+		  |_____|  _|___|_|_|___|_|      
+		        |_|                      
+		        	Made by Gacut
+		        	Ascii text: http://patorjk.com
+	''')
+
 import webbrowser
 from requests_html import HTMLSession
 
